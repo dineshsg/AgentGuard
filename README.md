@@ -11,7 +11,7 @@ This repo is built in explicit stages (see [`docs/BUILD_STAGES.md`](docs/BUILD_S
 each committed and pushed separately so progress is reviewable stage by
 stage rather than as one large drop.
 
-**Status:** 🚧 in progress — Stage 11 of 20 complete (Phase A, the base
+**Status:** 🚧 in progress — Stage 12 of 20 complete (Phase A, the base
 research assistant, is done; Phase B, the AgentGuard governance layer,
 is underway).
 
@@ -170,3 +170,16 @@ not averaged away. These are perfect scores on the *current*, small,
 hand-crafted corpus — not a claim of research-grade robustness against
 a determined, paraphrasing attacker (stated explicitly in
 `injection_guard.py`'s own docstring).
+
+**Human review escalation** (Stage 12) is live:
+[`src/governance/human_review_queue.py`](src/governance/human_review_queue.py)
+holds anything that clears the base Critic's own bar
+(`GROUNDEDNESS_THRESHOLD = 0.6`) but not the governance layer's
+stricter human-review bar, or that runs out of revision budget without
+full approval — routed here instead of silently returned to the user.
+[`governance/09_uat_checklist.md`](governance/09_uat_checklist.md) is
+the actual checklist a reviewer works through (citation accuracy, real
+hallucination vs. terse-but-correct, tone, scope, injection-scan
+residue), including the honest distinction between "a real hallucination"
+and "correct but brief" — two failure modes that look identical to the
+automated Critic but demand opposite decisions.

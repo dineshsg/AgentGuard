@@ -81,9 +81,13 @@ Follows `GOVERNANCE_BUILD_PLAN.md` §15's build order exactly.
       `evaluate_indirect_scenario`), `reports/governance/redteam_eval_report.json`
       — real run: 1.0 precision/recall/F1 on both direct and document
       guards, 100% (6/6) pass rate on the centerpiece indirect scenario.
-- [ ] **Stage 12 — Human review queue.**
-      `src/governance/human_review_queue.py`,
-      `governance/09_uat_checklist.md`.
+- [x] **Stage 12 — Human review queue.**
+      `src/governance/human_review_queue.py` (`HumanReviewItem`,
+      `enqueue`/`resolve`/`list_pending`, plain JSON array on disk —
+      deliberately not the hash-chained audit log format, since items
+      need in-place status updates),
+      `governance/09_uat_checklist.md` (what a reviewer actually
+      checks, and a stated-as-target-not-measured SLA).
 - [ ] **Stage 13 — Governed orchestrator.**
       `src/governance/governed_orchestrator.py`,
       `tests/governance/test_governed_orchestrator.py` (all 5 response
