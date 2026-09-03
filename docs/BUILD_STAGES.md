@@ -17,9 +17,10 @@ first, with a real multi-provider LLM backend powering the agents.
       (OpenAI / LiteLLM / Ollama / LM Studio, all config via env vars),
       `.env.example`, `requirements.txt`, `.gitignore`, base `README.md`,
       `tests/test_llm_backend.py`.
-- [ ] **Stage 2 — Core data model + retriever.** `src/state.py`
+- [x] **Stage 2 — Core data model + retriever.** `src/state.py`
       (`SubQuestion`, `SubAnswer`, `CritiqueResult`, `ResearchState`),
-      `src/retriever.py` (`RetrievedDoc` + retrieval), `data/kb_docs.json`.
+      `src/retriever.py` (`RetrievedDoc` + TF-IDF retrieval),
+      `data/kb_docs.json` (25 docs: 5 fictional companies x 5 doc types).
 - [ ] **Stage 3 — Agents.** `src/agents/planner.py`, `researcher.py`,
       `writer.py`, `critic.py` — LLM-backed via `src/llm_backend.py`.
 - [ ] **Stage 4 — Orchestrator + tools.** `src/orchestrator.py`

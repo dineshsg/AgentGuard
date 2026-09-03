@@ -1,0 +1,152 @@
+[
+  {
+    "doc_id": "acme-products",
+    "company": "Acme Robotics",
+    "doc_type": "Products",
+    "text": "Acme Robotics designs and manufactures industrial robotic arms and warehouse automation systems. Its flagship product, the ArmLine A7, is a six-axis robotic arm used for palletizing and precision assembly on factory floors. The company also sells FleetNav, a fleet-management platform that coordinates autonomous mobile robots inside distribution centers. In the most recent product cycle, Acme Robotics added a vision-guided picking module that lets the ArmLine A7 identify and grasp irregularly shaped items without custom tooling."
+  },
+  {
+    "doc_id": "acme-financials",
+    "company": "Acme Robotics",
+    "doc_type": "Financial Overview",
+    "text": "Acme Robotics reported revenue of $412 million in its most recent fiscal year, up 18% from the prior year, driven primarily by warehouse automation contracts. Gross margin held steady at 46%. The industrial arms segment contributed 61% of total revenue, while the FleetNav software subscription business grew 34% year over year and now accounts for 22% of revenue. Acme Robotics ended the year with $95 million in cash and no long-term debt."
+  },
+  {
+    "doc_id": "acme-risks",
+    "company": "Acme Robotics",
+    "doc_type": "Risk Factors",
+    "text": "Acme Robotics faces supply chain risk from its reliance on a small number of specialized servo-motor suppliers concentrated in a single region. A prolonged component shortage could delay ArmLine A7 shipments and hurt customer relationships. The company also faces competitive risk as larger automation vendors move into the mid-market warehouse segment where Acme Robotics has historically been strongest, and regulatory risk from evolving workplace-safety standards for collaborative robots operating near human workers."
+  },
+  {
+    "doc_id": "acme-leadership",
+    "company": "Acme Robotics",
+    "doc_type": "Executive Team",
+    "text": "Acme Robotics is led by CEO Elena Kowalski, who joined from a large industrial automation supplier and has focused the company on warehouse and logistics customers since taking over. CTO Raj Patel oversees robotics engineering and previously led perception research at a self-driving vehicle startup. CFO Marcus Webb, who joined two years ago, has prioritized reducing the company's dependence on any single supplier region."
+  },
+  {
+    "doc_id": "acme-competitors",
+    "company": "Acme Robotics",
+    "doc_type": "Competitive Landscape",
+    "text": "Acme Robotics competes primarily with larger industrial automation vendors on high-volume factory contracts and with smaller warehouse-robotics startups on mid-market distribution center deals. Its main differentiator is the FleetNav software layer, which several competitors do not offer as a standalone product. Analysts note that Acme Robotics' pricing sits above the smaller startups but below the largest industrial vendors, positioning it as a mid-market specialist."
+  },
+  {
+    "doc_id": "borealis-products",
+    "company": "Borealis Foods",
+    "doc_type": "Products",
+    "text": "Borealis Foods produces plant-based snack foods, including its GrainWave line of protein bars and NorthCrisp baked chips. The company recently launched a refrigerated plant-based dairy alternative line called Frostline, sold through grocery retailers in North America. Borealis Foods sources the majority of its plant protein from regional oat and pea processors, which it says shortens its supply chain compared to soy-based competitors."
+  },
+  {
+    "doc_id": "borealis-financials",
+    "company": "Borealis Foods",
+    "doc_type": "Financial Overview",
+    "text": "Borealis Foods reported revenue of $187 million, roughly flat compared to the prior year, as growth in the Frostline dairy-alternative line offset a decline in GrainWave protein bar sales. Gross margin fell to 31% from 35% due to higher oat and pea protein input costs. Management has guided toward margin recovery in the coming year as new co-packing agreements come online."
+  },
+  {
+    "doc_id": "borealis-risks",
+    "company": "Borealis Foods",
+    "doc_type": "Risk Factors",
+    "text": "Borealis Foods' input costs are exposed to weather-driven volatility in regional oat and pea crop yields, which can compress margins with little warning. The company also faces shelf-space risk as large grocery chains consolidate plant-based category listings around fewer brands, and reputational risk tied to any recall in its refrigerated Frostline product line, where cold-chain handling errors are harder to detect before reaching consumers."
+  },
+  {
+    "doc_id": "borealis-leadership",
+    "company": "Borealis Foods",
+    "doc_type": "Executive Team",
+    "text": "Borealis Foods is led by CEO Priya Anand, a former packaged-foods brand manager who co-founded the company to focus on regionally sourced plant protein. COO Daniel Ostrowski runs manufacturing and co-packing relationships. The board added a food-safety specialist as an independent director following the launch of the refrigerated Frostline line."
+  },
+  {
+    "doc_id": "borealis-competitors",
+    "company": "Borealis Foods",
+    "doc_type": "Competitive Landscape",
+    "text": "Borealis Foods competes with national plant-based snack brands on grocery shelf space and with regional dairy-alternative startups on the newer Frostline product line. Its regional oat-and-pea sourcing story differentiates it from soy-based competitors, but larger rivals have greater marketing budgets and broader distribution, and several have begun launching their own regionally sourced product lines in response."
+  },
+  {
+    "doc_id": "cascade-products",
+    "company": "Cascade Biotech",
+    "doc_type": "Products",
+    "text": "Cascade Biotech's lead product candidate, CB-114, is an oral kinase inhibitor in Phase 2 trials for a rare form of lymphoma. The company's second pipeline asset, CB-208, is a monoclonal antibody in Phase 1 trials targeting solid tumors. Cascade Biotech does not yet have an approved commercial product; its research focuses on precision oncology therapies for cancers with limited existing treatment options."
+  },
+  {
+    "doc_id": "cascade-financials",
+    "company": "Cascade Biotech",
+    "doc_type": "Financial Overview",
+    "text": "Cascade Biotech reported no product revenue, consistent with its pre-commercial stage, and a net loss of $138 million driven by Phase 2 trial costs for CB-114. The company ended the year with $310 million in cash and investments, which management estimates funds operations into the following fiscal year without additional financing. R&D spending rose 22% year over year as CB-208 advanced into Phase 1 trials."
+  },
+  {
+    "doc_id": "cascade-risks",
+    "company": "Cascade Biotech",
+    "doc_type": "Risk Factors",
+    "text": "Cascade Biotech's primary risk is clinical: CB-114's Phase 2 trial could fail to show sufficient efficacy or could reveal unexpected safety signals, which would materially harm the company's prospects given its reliance on a single lead candidate. The company also faces financing risk, since it has no product revenue and will likely need to raise additional capital before any product reaches market, and regulatory risk from evolving oncology trial-design requirements."
+  },
+  {
+    "doc_id": "cascade-leadership",
+    "company": "Cascade Biotech",
+    "doc_type": "Executive Team",
+    "text": "Cascade Biotech is led by CEO Dr. Helena Voss, an oncologist and former academic researcher who founded the company around early kinase-inhibitor research. Chief Medical Officer Dr. Samuel Okafor oversees clinical trial design for both CB-114 and CB-208. The company recently added a chief financial officer with prior biotech IPO experience ahead of a possible future public offering."
+  },
+  {
+    "doc_id": "cascade-competitors",
+    "company": "Cascade Biotech",
+    "doc_type": "Competitive Landscape",
+    "text": "Cascade Biotech competes with several larger oncology-focused biotechs also developing kinase inhibitors for lymphoma, some of which are further along in later-stage trials. Its main differentiator is CB-114's oral dosing, compared to infusion-based competitor therapies. Cascade Biotech's smaller size relative to competitors means it has fewer resources to run parallel trials if CB-114 encounters delays."
+  },
+  {
+    "doc_id": "meridian-products",
+    "company": "Meridian Energy",
+    "doc_type": "Products",
+    "text": "Meridian Energy develops utility-scale solar and wind generation projects and, more recently, grid-scale battery storage systems under its StoreLine product family. The company's SunField solar developments are typically 50-200 megawatts and are sold under long-term power purchase agreements with utilities. StoreLine battery installations are increasingly paired with SunField projects to shift solar generation into evening peak-demand hours."
+  },
+  {
+    "doc_id": "meridian-financials",
+    "company": "Meridian Energy",
+    "doc_type": "Financial Overview",
+    "text": "Meridian Energy reported revenue of $612 million, up 26% year over year, with the StoreLine battery storage segment growing fastest at 58% as utilities increasingly require paired storage in new solar contracts. Gross margin was 33%, pressured by higher battery-cell input costs. The company's project backlog, representing signed but not-yet-completed power purchase agreements, grew to $2.1 billion."
+  },
+  {
+    "doc_id": "meridian-risks",
+    "company": "Meridian Energy",
+    "doc_type": "Risk Factors",
+    "text": "Meridian Energy's project economics are sensitive to interest rates, since its long-duration solar and storage projects are financed with substantial debt and higher rates compress project returns. The company also faces policy risk from changes to renewable-energy tax credits and interconnection rules, and supply risk from its dependence on a concentrated set of battery-cell manufacturers for the StoreLine product line."
+  },
+  {
+    "doc_id": "meridian-leadership",
+    "company": "Meridian Energy",
+    "doc_type": "Executive Team",
+    "text": "Meridian Energy is led by CEO Thomas Reyes, who previously ran project development at a large utility before joining Meridian Energy to expand its storage business. Chief Development Officer Ingrid Larsen manages the SunField project pipeline. The company added a VP of battery supply chain last year specifically to diversify StoreLine's cell sourcing beyond its original supplier."
+  },
+  {
+    "doc_id": "meridian-competitors",
+    "company": "Meridian Energy",
+    "doc_type": "Competitive Landscape",
+    "text": "Meridian Energy competes with other independent power producers for utility power purchase agreements and, in the storage segment, with battery-integration specialists that partner with rather than compete against solar developers. Meridian Energy's combined SunField-plus-StoreLine offering is a differentiator versus solar-only developers, though several competitors have announced their own storage pairing programs in the past year."
+  },
+  {
+    "doc_id": "solstice-products",
+    "company": "Solstice Financial",
+    "doc_type": "Products",
+    "text": "Solstice Financial offers a digital payments platform for small and mid-sized merchants, along with PayGuard, a real-time fraud-detection service that screens transactions before settlement. The company also launched BankRail, a banking-as-a-service product that lets other fintech companies embed deposit accounts and card issuance into their own apps using Solstice Financial's banking-charter partnerships."
+  },
+  {
+    "doc_id": "solstice-financials",
+    "company": "Solstice Financial",
+    "doc_type": "Financial Overview",
+    "text": "Solstice Financial reported revenue of $298 million, up 41% year over year, led by BankRail, which grew 96% as more fintech partners embedded its banking infrastructure. Payment processing take rates held steady, but PayGuard fraud-detection subscription revenue grew 29%. The company remained unprofitable on a GAAP basis, with a net loss of $22 million, though management pointed to narrowing losses each quarter."
+  },
+  {
+    "doc_id": "solstice-risks",
+    "company": "Solstice Financial",
+    "doc_type": "Risk Factors",
+    "text": "Solstice Financial faces regulatory risk as banking-as-a-service arrangements like BankRail face increasing scrutiny from banking regulators over compliance oversight of embedded-finance partners. The company also faces fraud-model risk, since PayGuard's effectiveness depends on continuously updated fraud patterns, and concentration risk from BankRail's reliance on a small number of chartered-bank partners to issue accounts and cards."
+  },
+  {
+    "doc_id": "solstice-leadership",
+    "company": "Solstice Financial",
+    "doc_type": "Executive Team",
+    "text": "Solstice Financial is led by CEO Naomi Chen, a former payments-industry executive who founded the company to focus on small-merchant payment acceptance before expanding into banking-as-a-service. Chief Risk Officer David Ibrahim oversees compliance for the BankRail banking partnerships. The company recruited a former banking regulator to its board following increased regulatory attention on embedded finance."
+  },
+  {
+    "doc_id": "solstice-competitors",
+    "company": "Solstice Financial",
+    "doc_type": "Competitive Landscape",
+    "text": "Solstice Financial competes with other small-merchant payment processors on transaction pricing and, in the banking-as-a-service segment, with larger embedded-finance platforms that have more established bank-partner networks. PayGuard's fraud-detection accuracy is a frequently cited differentiator in merchant reviews, though several competitors have begun bundling similar fraud tools at no additional cost."
+  }
+]
