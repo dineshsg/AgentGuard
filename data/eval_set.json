@@ -1,0 +1,92 @@
+[
+  {
+    "id": "eval-01",
+    "question": "What products does Acme Robotics sell?",
+    "expected_keywords": ["robotic arm", "warehouse automation", "ArmLine"]
+  },
+  {
+    "id": "eval-02",
+    "question": "What was Acme Robotics' revenue and growth rate?",
+    "expected_keywords": ["412 million", "18%"]
+  },
+  {
+    "id": "eval-03",
+    "question": "What risks does Acme Robotics face?",
+    "expected_keywords": ["servo-motor", "supply chain"]
+  },
+  {
+    "id": "eval-04",
+    "question": "Who is the CEO of Acme Robotics?",
+    "expected_keywords": ["Elena Kowalski"]
+  },
+  {
+    "id": "eval-05",
+    "question": "Who are Acme Robotics' main competitors?",
+    "expected_keywords": ["FleetNav", "mid-market"]
+  },
+  {
+    "id": "eval-06",
+    "question": "What products does Borealis Foods sell?",
+    "expected_keywords": ["GrainWave", "Frostline"]
+  },
+  {
+    "id": "eval-07",
+    "question": "What was Borealis Foods' revenue?",
+    "expected_keywords": ["187 million"]
+  },
+  {
+    "id": "eval-08",
+    "question": "What risks does Borealis Foods face?",
+    "expected_keywords": ["oat and pea", "shelf-space"]
+  },
+  {
+    "id": "eval-09",
+    "question": "What is Cascade Biotech's lead product candidate?",
+    "expected_keywords": ["CB-114", "kinase inhibitor"]
+  },
+  {
+    "id": "eval-10",
+    "question": "What is Cascade Biotech's financial position?",
+    "expected_keywords": ["net loss", "138 million"]
+  },
+  {
+    "id": "eval-11",
+    "question": "Who is the CEO of Cascade Biotech?",
+    "expected_keywords": ["Helena Voss"]
+  },
+  {
+    "id": "eval-12",
+    "question": "What products does Meridian Energy offer?",
+    "expected_keywords": ["SunField", "StoreLine"]
+  },
+  {
+    "id": "eval-13",
+    "question": "What was Meridian Energy's revenue growth?",
+    "expected_keywords": ["612 million", "26%"]
+  },
+  {
+    "id": "eval-14",
+    "question": "What risks does Meridian Energy face?",
+    "expected_keywords": ["interest rates", "battery-cell"]
+  },
+  {
+    "id": "eval-15",
+    "question": "What products does Solstice Financial offer?",
+    "expected_keywords": ["PayGuard", "BankRail"]
+  },
+  {
+    "id": "eval-16",
+    "question": "What was Solstice Financial's revenue growth?",
+    "expected_keywords": ["298 million", "41%"]
+  },
+  {
+    "id": "eval-17",
+    "question": "Compare Acme Robotics and Borealis Foods' revenue growth.",
+    "expected_keywords": ["Acme Robotics", "Borealis Foods"]
+  },
+  {
+    "id": "eval-18",
+    "question": "Compare the financial overviews of Meridian Energy and Solstice Financial.",
+    "expected_keywords": ["Meridian Energy", "Solstice Financial"]
+  }
+]

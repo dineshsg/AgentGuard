@@ -1,0 +1,247 @@
+{
+  "summary": {
+    "n_questions": 18,
+    "keyword_recall": 0.9167,
+    "citation_coverage": 1.0,
+    "groundedness": 0.9611,
+    "approval_rate": 1.0,
+    "mean_latency_seconds": 16.2431
+  },
+  "results": [
+    {
+      "id": "eval-01",
+      "question": "What products does Acme Robotics sell?",
+      "approved": true,
+      "iterations_used": 1,
+      "keyword_recall": 1.0,
+      "groundedness": 0.8,
+      "citation_coverage": 1.0,
+      "citations": [
+        "acme-products"
+      ],
+      "elapsed_seconds": 15.985
+    },
+    {
+      "id": "eval-02",
+      "question": "What was Acme Robotics' revenue and growth rate?",
+      "approved": true,
+      "iterations_used": 1,
+      "keyword_recall": 1.0,
+      "groundedness": 0.9,
+      "citation_coverage": 1.0,
+      "citations": [
+        "acme-financials"
+      ],
+      "elapsed_seconds": 19.968
+    },
+    {
+      "id": "eval-03",
+      "question": "What risks does Acme Robotics face?",
+      "approved": true,
+      "iterations_used": 1,
+      "keyword_recall": 0.5,
+      "groundedness": 1.0,
+      "citation_coverage": 1.0,
+      "citations": [
+        "acme-risks"
+      ],
+      "elapsed_seconds": 12.828
+    },
+    {
+      "id": "eval-04",
+      "question": "Who is the CEO of Acme Robotics?",
+      "approved": true,
+      "iterations_used": 1,
+      "keyword_recall": 1.0,
+      "groundedness": 1.0,
+      "citation_coverage": 1.0,
+      "citations": [
+        "acme-leadership"
+      ],
+      "elapsed_seconds": 12.719
+    },
+    {
+      "id": "eval-05",
+      "question": "Who are Acme Robotics' main competitors?",
+      "approved": true,
+      "iterations_used": 1,
+      "keyword_recall": 0.5,
+      "groundedness": 1.0,
+      "citation_coverage": 1.0,
+      "citations": [
+        "acme-competitors"
+      ],
+      "elapsed_seconds": 14.156
+    },
+    {
+      "id": "eval-06",
+      "question": "What products does Borealis Foods sell?",
+      "approved": true,
+      "iterations_used": 1,
+      "keyword_recall": 1.0,
+      "groundedness": 0.9,
+      "citation_coverage": 1.0,
+      "citations": [
+        "borealis-products"
+      ],
+      "elapsed_seconds": 13.829
+    },
+    {
+      "id": "eval-07",
+      "question": "What was Borealis Foods' revenue?",
+      "approved": true,
+      "iterations_used": 1,
+      "keyword_recall": 1.0,
+      "groundedness": 1.0,
+      "citation_coverage": 1.0,
+      "citations": [
+        "borealis-financials"
+      ],
+      "elapsed_seconds": 12.953
+    },
+    {
+      "id": "eval-08",
+      "question": "What risks does Borealis Foods face?",
+      "approved": true,
+      "iterations_used": 1,
+      "keyword_recall": 1.0,
+      "groundedness": 1.0,
+      "citation_coverage": 1.0,
+      "citations": [
+        "borealis-risks"
+      ],
+      "elapsed_seconds": 16.609
+    },
+    {
+      "id": "eval-09",
+      "question": "What is Cascade Biotech's lead product candidate?",
+      "approved": true,
+      "iterations_used": 1,
+      "keyword_recall": 1.0,
+      "groundedness": 1.0,
+      "citation_coverage": 1.0,
+      "citations": [
+        "cascade-products"
+      ],
+      "elapsed_seconds": 14.453
+    },
+    {
+      "id": "eval-10",
+      "question": "What is Cascade Biotech's financial position?",
+      "approved": true,
+      "iterations_used": 1,
+      "keyword_recall": 1.0,
+      "groundedness": 1.0,
+      "citation_coverage": 1.0,
+      "citations": [
+        "cascade-financials"
+      ],
+      "elapsed_seconds": 15.688
+    },
+    {
+      "id": "eval-11",
+      "question": "Who is the CEO of Cascade Biotech?",
+      "approved": true,
+      "iterations_used": 1,
+      "keyword_recall": 1.0,
+      "groundedness": 1.0,
+      "citation_coverage": 1.0,
+      "citations": [
+        "cascade-leadership"
+      ],
+      "elapsed_seconds": 12.578
+    },
+    {
+      "id": "eval-12",
+      "question": "What products does Meridian Energy offer?",
+      "approved": true,
+      "iterations_used": 1,
+      "keyword_recall": 1.0,
+      "groundedness": 1.0,
+      "citation_coverage": 1.0,
+      "citations": [
+        "meridian-products"
+      ],
+      "elapsed_seconds": 14.14
+    },
+    {
+      "id": "eval-13",
+      "question": "What was Meridian Energy's revenue growth?",
+      "approved": true,
+      "iterations_used": 1,
+      "keyword_recall": 1.0,
+      "groundedness": 1.0,
+      "citation_coverage": 1.0,
+      "citations": [
+        "meridian-financials"
+      ],
+      "elapsed_seconds": 13.407
+    },
+    {
+      "id": "eval-14",
+      "question": "What risks does Meridian Energy face?",
+      "approved": true,
+      "iterations_used": 1,
+      "keyword_recall": 1.0,
+      "groundedness": 1.0,
+      "citation_coverage": 1.0,
+      "citations": [
+        "meridian-risks"
+      ],
+      "elapsed_seconds": 14.265
+    },
+    {
+      "id": "eval-15",
+      "question": "What products does Solstice Financial offer?",
+      "approved": true,
+      "iterations_used": 1,
+      "keyword_recall": 1.0,
+      "groundedness": 0.9,
+      "citation_coverage": 1.0,
+      "citations": [
+        "solstice-products"
+      ],
+      "elapsed_seconds": 15.547
+    },
+    {
+      "id": "eval-16",
+      "question": "What was Solstice Financial's revenue growth?",
+      "approved": true,
+      "iterations_used": 1,
+      "keyword_recall": 0.5,
+      "groundedness": 1.0,
+      "citation_coverage": 1.0,
+      "citations": [
+        "solstice-financials"
+      ],
+      "elapsed_seconds": 14.016
+    },
+    {
+      "id": "eval-17",
+      "question": "Compare Acme Robotics and Borealis Foods' revenue growth.",
+      "approved": true,
+      "iterations_used": 2,
+      "keyword_recall": 1.0,
+      "groundedness": 0.8,
+      "citation_coverage": 1.0,
+      "citations": [
+        "borealis-financials"
+      ],
+      "elapsed_seconds": 40.359
+    },
+    {
+      "id": "eval-18",
+      "question": "Compare the financial overviews of Meridian Energy and Solstice Financial.",
+      "approved": true,
+      "iterations_used": 1,
+      "keyword_recall": 1.0,
+      "groundedness": 1.0,
+      "citation_coverage": 1.0,
+      "citations": [
+        "meridian-financials",
+        "solstice-financials"
+      ],
+      "elapsed_seconds": 18.875
+    }
+  ]
+}

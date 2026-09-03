@@ -11,7 +11,8 @@ This repo is built in explicit stages (see [`docs/BUILD_STAGES.md`](docs/BUILD_S
 each committed and pushed separately so progress is reviewable stage by
 stage rather than as one large drop.
 
-**Status:** 🚧 in progress — Stage 4 of 20 complete.
+**Status:** 🚧 in progress — Stage 5 of 20 complete (Phase A, the base
+research assistant, is done).
 
 ## Multi-provider LLM backend
 
@@ -46,17 +47,52 @@ Studio (both plain HTTP, no extra SDK).
 ```
 src/
   llm_backend.py     # provider-agnostic LLM client            (stage 1)
-  state.py            # research state model (this stage)
-  retriever.py         # TF-IDF document retrieval (this stage)
-  agents/              # planner / researcher / writer / critic (stage 3)
-  orchestrator.py      # AgentGraph + ResearchOrchestrator     (this stage)
-  tools.py             # shared reporting helpers               (this stage)
+  state.py            # research state model                    (stage 2)
+  retriever.py         # TF-IDF document retrieval                (stage 2)
+  agents/              # planner / researcher / writer / critic   (stage 3)
+  orchestrator.py      # AgentGraph + ResearchOrchestrator        (stage 4)
+  tools.py             # shared reporting helpers                  (stage 4)
   governance/          # AgentGuard governance package          (stages 6-18)
+evaluate.py             # eval harness -- run against data/eval_set.json (this stage)
 data/                  # knowledge base + eval set              (stages 2, 5)
 governance/             # process/sign-off docs (intake, risk, RBAC, UAT, retirement)
 reports/                 # real run outputs (eval, redteam, promotion, KPI, incidents)
 tests/                   # base project tests + tests/governance/
 ```
+
+## Base project evaluation
+
+`evaluate.py` runs every question in [`data/eval_set.json`](data/eval_set.json)
+(18 questions across all 5 companies plus 2 cross-company comparisons)
+through the real pipeline and writes
+[`reports/eval_report.json`](reports/eval_report.json). This run used a real
+local model — **LM Studio, `qwen2.5-7b-instruct`** — not a mock:
+
+```bash
+python evaluate.py
+```
+
+| Metric | Value |
+|---|---|
+| Questions | 18 |
+| Approval rate | 100% (18/18 approved by the Critic) |
+| Groundedness | 0.961 |
+| Citation coverage | 1.00 |
+| Keyword recall | 0.917 |
+| Mean latency | 16.2s / question |
+
+Keyword recall is a strict, literal substring check against a small
+hand-picked keyword list per question — three questions landed at 0.5
+because the model's phrasing didn't reuse the exact source string (e.g.
+paraphrasing a competitor's product name instead of quoting it), not
+because the answer was wrong. Worth stating plainly rather than smoothing
+over: one comparison question (`eval-17`, Acme Robotics vs. Borealis Foods
+revenue) took 2 revision iterations and its final answer ended up citing
+only one of the two companies' documents even though both were retrieved
+and separately answered — a real synthesis weakness of this 7B model on a
+multi-company question, not a bug in the citation-extraction logic (the
+other comparison question, `eval-18`, correctly cited both companies). Full
+per-question detail is in `reports/eval_report.json`.
 
 ## AgentGuard — Governance & Lifecycle Layer
 

@@ -31,9 +31,14 @@ first, with a real multi-provider LLM backend powering the agents.
       `src/tools.py`. `AgentGraph` is fully generic (typed over any
       State) so the governance layer's second graph (stage 13) reuses
       it unmodified, exactly as the spec requires.
-- [ ] **Stage 5 — Eval harness + base tests + README.**
-      `data/eval_set.json`, `evaluate.py`, `reports/eval_report.json`,
-      `tests/*.py`, base `README.md` filled in with real eval numbers.
+- [x] **Stage 5 — Eval harness + base tests + README.**
+      `data/eval_set.json` (18 questions), `evaluate.py`,
+      `reports/eval_report.json` (real run against LM Studio,
+      `qwen2.5-7b-instruct`: 100% approval, 0.961 groundedness, 1.00
+      citation coverage, 0.917 keyword recall), `tests/test_evaluate.py`,
+      base `README.md` filled in with these real numbers (including an
+      honest note on eval-17's partial-citation weakness). Phase A
+      (the base research assistant) is now complete.
 
 ## Phase B — AgentGuard governance layer
 
