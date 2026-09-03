@@ -51,8 +51,11 @@ Follows `GOVERNANCE_BUILD_PLAN.md` §15's build order exactly.
       `04_architecture_notes.md` (references the existing pipeline,
       does not redesign it). Pure documentation, no code, as the plan
       requires for these three lifecycle stages.
-- [ ] **Stage 7 — Lifecycle model.** `src/governance/lifecycle.py`
-      (`LifecycleStage`, `LIFECYCLE_STAGES`, `CapabilityVersionRecord`).
+- [x] **Stage 7 — Lifecycle model.** `src/governance/lifecycle.py`
+      (`LifecycleStage`, `LIFECYCLE_STAGES` — all 14 rows of the plan's
+      table as data, `CapabilityVersionRecord`, `stages_remaining`,
+      `mark_stage_complete`). Pure bookkeeping, no dependency on the
+      rest of `src/governance/`.
 - [ ] **Stage 8 — RBAC.** `src/governance/rbac.py`,
       `tests/governance/test_rbac.py`, `governance/03_role_matrix.md`.
 - [ ] **Stage 9 — Audit log.** `src/governance/audit_log.py` (hash-chained,

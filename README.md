@@ -11,7 +11,7 @@ This repo is built in explicit stages (see [`docs/BUILD_STAGES.md`](docs/BUILD_S
 each committed and pushed separately so progress is reviewable stage by
 stage rather than as one large drop.
 
-**Status:** 🚧 in progress — Stage 6 of 20 complete (Phase A, the base
+**Status:** 🚧 in progress — Stage 7 of 20 complete (Phase A, the base
 research assistant, is done; Phase B, the AgentGuard governance layer,
 is underway).
 
