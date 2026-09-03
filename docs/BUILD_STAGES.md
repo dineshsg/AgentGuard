@@ -76,8 +76,11 @@ Follows `GOVERNANCE_BUILD_PLAN.md` §15's build order exactly.
       `tests/governance/test_injection_guard.py` — 78 tests, including
       the centerpiece scenario passing for all 6 pairs and every real
       `data/kb_docs.json` document correctly staying unflagged.
-- [ ] **Stage 11 — Red-team eval.** `src/governance/redteam_eval.py`,
-      `reports/governance/redteam_eval_report.json` (real run).
+- [x] **Stage 11 — Red-team eval.** `src/governance/redteam_eval.py`
+      (`evaluate_direct_guard`/`evaluate_document_guard`/
+      `evaluate_indirect_scenario`), `reports/governance/redteam_eval_report.json`
+      — real run: 1.0 precision/recall/F1 on both direct and document
+      guards, 100% (6/6) pass rate on the centerpiece indirect scenario.
 - [ ] **Stage 12 — Human review queue.**
       `src/governance/human_review_queue.py`,
       `governance/09_uat_checklist.md`.

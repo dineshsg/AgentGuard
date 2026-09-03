@@ -11,7 +11,7 @@ This repo is built in explicit stages (see [`docs/BUILD_STAGES.md`](docs/BUILD_S
 each committed and pushed separately so progress is reviewable stage by
 stage rather than as one large drop.
 
-**Status:** 🚧 in progress — Stage 10 of 20 complete (Phase A, the base
+**Status:** 🚧 in progress — Stage 11 of 20 complete (Phase A, the base
 research assistant, is done; Phase B, the AgentGuard governance layer,
 is underway).
 
@@ -152,5 +152,21 @@ pairs 6 poisoned documents with 6 completely benign, on-topic questions
 that would legitimately retrieve them. All 6 pass right now: every
 paired question scans clean, every paired poisoned document gets
 flagged — proven by `tests/governance/test_injection_guard.py`
-(78 tests), not just asserted. Precision/recall numbers against the
-full labeled corpus land in Stage 11's real `redteam_eval_report.json`.
+(78 tests), not just asserted.
+
+**Real red-team numbers** (Stage 11, [`reports/governance/redteam_eval_report.json`](reports/governance/redteam_eval_report.json),
+run with `python -m src.governance.redteam_eval` — deterministic regex
+matching, no LLM involved, so re-running reproduces the same numbers):
+
+| Guard | Precision | Recall | F1 | Sample size |
+|---|---|---|---|---|
+| Direct (questions) | 1.0 | 1.0 | 1.0 | 13 attacks, 15 benign |
+| Document (evidence) | 1.0 | 1.0 | 1.0 | 6 poisoned, 25 real documents |
+
+**Indirect-injection scenario pass rate: 100% (6/6)** — reported on its
+own, not folded into the precision/recall table above, per this
+project's own design: a partial pass here should be visible on its own,
+not averaged away. These are perfect scores on the *current*, small,
+hand-crafted corpus — not a claim of research-grade robustness against
+a determined, paraphrasing attacker (stated explicitly in
+`injection_guard.py`'s own docstring).
