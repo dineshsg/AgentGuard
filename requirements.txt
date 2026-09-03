@@ -1,0 +1,16 @@
+# Core: pure stdlib for state/orchestrator/governance (dataclasses, re, json, hashlib).
+# The only third-party dependency needed unconditionally is `requests`, used
+# for the local OpenAI-compatible HTTP APIs (Ollama, LM Studio).
+requests>=2.31
+
+# Optional, provider-specific — imported lazily inside src/llm_backend.py so
+# the rest of the project (including the entire src/governance package) has
+# zero hard dependency on either package:
+#   openai      -> only needed if LLM_PROVIDER=openai
+#   litellm     -> only needed if LLM_PROVIDER=litellm
+# Install on demand:
+#   pip install openai
+#   pip install litellm
+
+# Testing
+pytest>=7.4
