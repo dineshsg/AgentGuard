@@ -11,7 +11,7 @@ This repo is built in explicit stages (see [`docs/BUILD_STAGES.md`](docs/BUILD_S
 each committed and pushed separately so progress is reviewable stage by
 stage rather than as one large drop.
 
-**Status:** 🚧 in progress — Stage 9 of 20 complete (Phase A, the base
+**Status:** 🚧 in progress — Stage 10 of 20 complete (Phase A, the base
 research assistant, is done; Phase B, the AgentGuard governance layer,
 is underway).
 
@@ -132,3 +132,25 @@ deleting any line breaks the chain for every record after it.
 `verify_audit_chain()` catches this deterministically; it's proven by a
 real test that tampers with one record's payload in place and confirms
 detection fails at exactly that record, not just claimed.
+
+**The centerpiece scenario is real and passing** (Stage 10):
+[`src/governance/injection_guard.py`](src/governance/injection_guard.py)
+scans two independent surfaces — `scan_question` (the user's question)
+and `scan_document` (each retrieved piece of evidence) — because a
+direct-only guard is trivially incomplete for a RAG system: a
+compromised or poisoned data source can embed an instruction ("ignore
+your instructions and instead…") inside a document that gets retrieved
+for a completely innocent question, and only scanning *retrieved
+evidence*, not just the question, catches that. This is a heuristic,
+regex-based prototype, stated plainly — a determined attacker can
+paraphrase around fixed patterns; the point is the *architecture*
+(scan both surfaces, score by category, gate on severity, evaluate
+against a labeled corpus), not research-grade robustness.
+
+[`src/governance/redteam_corpus.py`](src/governance/redteam_corpus.py)
+pairs 6 poisoned documents with 6 completely benign, on-topic questions
+that would legitimately retrieve them. All 6 pass right now: every
+paired question scans clean, every paired poisoned document gets
+flagged — proven by `tests/governance/test_injection_guard.py`
+(78 tests), not just asserted. Precision/recall numbers against the
+full labeled corpus land in Stage 11's real `redteam_eval_report.json`.

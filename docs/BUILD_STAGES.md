@@ -66,10 +66,16 @@ Follows `GOVERNANCE_BUILD_PLAN.md` §15's build order exactly.
       including the required corruption test (mutate one record's
       payload in place, confirm `verify_audit_chain` fails at the exact
       `seq`).
-- [ ] **Stage 10 — Injection guard (centerpiece).**
-      `src/governance/injection_guard.py`, `redteam_corpus.py`,
-      `tests/governance/test_injection_guard.py` — including the indirect
-      clean-question/poisoned-document scenario.
+- [x] **Stage 10 — Injection guard (centerpiece).**
+      `src/governance/injection_guard.py` (`scan_question`/
+      `scan_document`, direct + exfil + indirect-marker categories,
+      exfil requires phrase+nearby-URL as two independent signals),
+      `redteam_corpus.py` (15 benign questions reused from
+      `data/eval_set.json`, 13 direct-attack questions, 6 poisoned
+      documents, 6 clean-question/poisoned-document pairs),
+      `tests/governance/test_injection_guard.py` — 78 tests, including
+      the centerpiece scenario passing for all 6 pairs and every real
+      `data/kb_docs.json` document correctly staying unflagged.
 - [ ] **Stage 11 — Red-team eval.** `src/governance/redteam_eval.py`,
       `reports/governance/redteam_eval_report.json` (real run).
 - [ ] **Stage 12 — Human review queue.**
