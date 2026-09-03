@@ -56,7 +56,9 @@ Follows `GOVERNANCE_BUILD_PLAN.md` §15's build order exactly.
       table as data, `CapabilityVersionRecord`, `stages_remaining`,
       `mark_stage_complete`). Pure bookkeeping, no dependency on the
       rest of `src/governance/`.
-- [ ] **Stage 8 — RBAC.** `src/governance/rbac.py`,
+- [x] **Stage 8 — RBAC.** `src/governance/rbac.py` (`ROLES`,
+      `RATE_LIMITS`, `Requester`, `PermissionDenied`, `PolicyEngine`
+      with `check_rate_limit`/`check_mode_permission`),
       `tests/governance/test_rbac.py`, `governance/03_role_matrix.md`.
 - [ ] **Stage 9 — Audit log.** `src/governance/audit_log.py` (hash-chained,
       tamper-evident), `tests/governance/test_audit_log.py`.

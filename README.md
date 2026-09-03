@@ -11,7 +11,7 @@ This repo is built in explicit stages (see [`docs/BUILD_STAGES.md`](docs/BUILD_S
 each committed and pushed separately so progress is reviewable stage by
 stage rather than as one large drop.
 
-**Status:** 🚧 in progress — Stage 7 of 20 complete (Phase A, the base
+**Status:** 🚧 in progress — Stage 8 of 20 complete (Phase A, the base
 research assistant, is done; Phase B, the AgentGuard governance layer,
 is underway).
 
@@ -112,3 +112,15 @@ which is exactly the indirect prompt-injection surface Stage 10 is built
 to catch — highest factor wins). That Medium tier is what the rest of
 the governance layer's controls (Stages 8–16) are sized to justify, not
 governance applied uniformly regardless of actual risk.
+
+**RBAC** (Stage 8) is live: [`src/governance/rbac.py`](src/governance/rbac.py)
+enforces this exactly —
+
+| Role | Rate limit (per session) | Allowed question types | Admin capabilities |
+|---|---|---|---|
+| `viewer` | 20 requests | `search`/`targeted`, one company at a time only | None |
+| `analyst` | 50 requests | Unrestricted | None |
+| `senior_analyst` | Unlimited | Unrestricted | None |
+| `admin` | Unlimited | Unrestricted | Circuit-break a capability, resolve human-review items, manage roles |
+
+Full rationale in [`governance/03_role_matrix.md`](governance/03_role_matrix.md).
