@@ -26,9 +26,11 @@ first, with a real multi-provider LLM backend powering the agents.
       (researcher is the one exception: pure retrieval, no LLM call).
       Shared `src/agents/_json_util.py` for robust structured-output
       parsing (markdown fences, stray prose).
-- [ ] **Stage 4 — Orchestrator + tools.** `src/orchestrator.py`
+- [x] **Stage 4 — Orchestrator + tools.** `src/orchestrator.py`
       (`AgentGraph`, `build_research_graph`, `ResearchOrchestrator`),
-      `src/tools.py`.
+      `src/tools.py`. `AgentGraph` is fully generic (typed over any
+      State) so the governance layer's second graph (stage 13) reuses
+      it unmodified, exactly as the spec requires.
 - [ ] **Stage 5 — Eval harness + base tests + README.**
       `data/eval_set.json`, `evaluate.py`, `reports/eval_report.json`,
       `tests/*.py`, base `README.md` filled in with real eval numbers.
