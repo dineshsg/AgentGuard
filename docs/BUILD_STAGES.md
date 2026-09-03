@@ -21,8 +21,11 @@ first, with a real multi-provider LLM backend powering the agents.
       (`SubQuestion`, `SubAnswer`, `CritiqueResult`, `ResearchState`),
       `src/retriever.py` (`RetrievedDoc` + TF-IDF retrieval),
       `data/kb_docs.json` (25 docs: 5 fictional companies x 5 doc types).
-- [ ] **Stage 3 — Agents.** `src/agents/planner.py`, `researcher.py`,
-      `writer.py`, `critic.py` — LLM-backed via `src/llm_backend.py`.
+- [x] **Stage 3 — Agents.** `src/agents/planner.py`, `researcher.py`,
+      `writer.py`, `critic.py` — LLM-backed via `src/llm_backend.py`
+      (researcher is the one exception: pure retrieval, no LLM call).
+      Shared `src/agents/_json_util.py` for robust structured-output
+      parsing (markdown fences, stray prose).
 - [ ] **Stage 4 — Orchestrator + tools.** `src/orchestrator.py`
       (`AgentGraph`, `build_research_graph`, `ResearchOrchestrator`),
       `src/tools.py`.

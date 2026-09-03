@@ -11,7 +11,7 @@ This repo is built in explicit stages (see [`docs/BUILD_STAGES.md`](docs/BUILD_S
 each committed and pushed separately so progress is reviewable stage by
 stage rather than as one large drop.
 
-**Status:** 🚧 in progress — Stage 2 of 20 complete.
+**Status:** 🚧 in progress — Stage 3 of 20 complete.
 
 ## Multi-provider LLM backend
 
@@ -48,7 +48,7 @@ src/
   llm_backend.py     # provider-agnostic LLM client            (stage 1)
   state.py            # research state model (this stage)
   retriever.py         # TF-IDF document retrieval (this stage)
-  agents/              # planner / researcher / writer / critic (stage 3)
+  agents/              # planner / researcher / writer / critic (this stage)
   orchestrator.py      # AgentGraph + ResearchOrchestrator     (stage 4)
   tools.py             # shared agent tools                    (stage 4)
   governance/          # AgentGuard governance package          (stages 6-18)
