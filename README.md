@@ -11,7 +11,7 @@ This repo is built in explicit stages (see [`docs/BUILD_STAGES.md`](docs/BUILD_S
 each committed and pushed separately so progress is reviewable stage by
 stage rather than as one large drop.
 
-**Status:** 🚧 in progress — Stage 8 of 20 complete (Phase A, the base
+**Status:** 🚧 in progress — Stage 9 of 20 complete (Phase A, the base
 research assistant, is done; Phase B, the AgentGuard governance layer,
 is underway).
 
@@ -124,3 +124,11 @@ enforces this exactly —
 | `admin` | Unlimited | Unrestricted | Circuit-break a capability, resolve human-review items, manage roles |
 
 Full rationale in [`governance/03_role_matrix.md`](governance/03_role_matrix.md).
+
+**Audit logging** (Stage 9) is live: [`src/governance/audit_log.py`](src/governance/audit_log.py)
+is a hash-chained, append-only log — every record's hash is computed
+from its own fields *plus* the previous record's hash, so editing or
+deleting any line breaks the chain for every record after it.
+`verify_audit_chain()` catches this deterministically; it's proven by a
+real test that tampers with one record's payload in place and confirms
+detection fails at exactly that record, not just claimed.

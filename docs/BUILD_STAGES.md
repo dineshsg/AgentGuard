@@ -60,8 +60,12 @@ Follows `GOVERNANCE_BUILD_PLAN.md` §15's build order exactly.
       `RATE_LIMITS`, `Requester`, `PermissionDenied`, `PolicyEngine`
       with `check_rate_limit`/`check_mode_permission`),
       `tests/governance/test_rbac.py`, `governance/03_role_matrix.md`.
-- [ ] **Stage 9 — Audit log.** `src/governance/audit_log.py` (hash-chained,
-      tamper-evident), `tests/governance/test_audit_log.py`.
+- [x] **Stage 9 — Audit log.** `src/governance/audit_log.py` (`AuditRecord`,
+      `AuditLog.append`/`read_all`, `verify_audit_chain` — SHA-256
+      hash-chained, tamper-evident), `tests/governance/test_audit_log.py`
+      including the required corruption test (mutate one record's
+      payload in place, confirm `verify_audit_chain` fails at the exact
+      `seq`).
 - [ ] **Stage 10 — Injection guard (centerpiece).**
       `src/governance/injection_guard.py`, `redteam_corpus.py`,
       `tests/governance/test_injection_guard.py` — including the indirect
