@@ -11,8 +11,9 @@ This repo is built in explicit stages (see [`docs/BUILD_STAGES.md`](docs/BUILD_S
 each committed and pushed separately so progress is reviewable stage by
 stage rather than as one large drop.
 
-**Status:** 🚧 in progress — Stage 5 of 20 complete (Phase A, the base
-research assistant, is done).
+**Status:** 🚧 in progress — Stage 6 of 20 complete (Phase A, the base
+research assistant, is done; Phase B, the AgentGuard governance layer,
+is underway).
 
 ## Multi-provider LLM backend
 
@@ -99,3 +100,15 @@ per-question detail is in `reports/eval_report.json`.
 Added in stages 6–19 (see `docs/BUILD_STAGES.md`). This section will be
 filled in with real numbers from `reports/governance/*.json` once those
 stages land — no numbers are written here ahead of an actual run.
+
+The process side is underway: [`governance/01_intake_form.md`](governance/01_intake_form.md),
+[`02_risk_assessment.md`](governance/02_risk_assessment.md), and
+[`04_architecture_notes.md`](governance/04_architecture_notes.md) are
+real, filled-in sign-off documents, not templates left blank — the risk
+assessment scores this capability **Medium** overall (Medium on data
+sensitivity, decision impact, and automation level, but **High** on
+attack surface specifically because it retrieves documents as evidence,
+which is exactly the indirect prompt-injection surface Stage 10 is built
+to catch — highest factor wins). That Medium tier is what the rest of
+the governance layer's controls (Stages 8–16) are sized to justify, not
+governance applied uniformly regardless of actual risk.

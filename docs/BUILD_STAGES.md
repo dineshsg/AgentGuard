@@ -44,8 +44,13 @@ first, with a real multi-provider LLM backend powering the agents.
 
 Follows `GOVERNANCE_BUILD_PLAN.md` §15's build order exactly.
 
-- [ ] **Stage 6 — Governance docs.** `governance/01_intake_form.md`,
-      `02_risk_assessment.md`, `04_architecture_notes.md`.
+- [x] **Stage 6 — Governance docs.** `governance/01_intake_form.md`,
+      `02_risk_assessment.md` (produces risk tier **Medium** — Medium
+      data sensitivity/decision-impact/automation, but High attack
+      surface from indirect prompt injection, and highest factor wins),
+      `04_architecture_notes.md` (references the existing pipeline,
+      does not redesign it). Pure documentation, no code, as the plan
+      requires for these three lifecycle stages.
 - [ ] **Stage 7 — Lifecycle model.** `src/governance/lifecycle.py`
       (`LifecycleStage`, `LIFECYCLE_STAGES`, `CapabilityVersionRecord`).
 - [ ] **Stage 8 — RBAC.** `src/governance/rbac.py`,
